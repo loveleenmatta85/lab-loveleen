@@ -14,3 +14,8 @@ gpgcheck=1
 run below command
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 sudo yum install jenkins -y
+
+sudo systemctl start jenkins
+sudo systemctl enable jenkins
+
+sudo systemctl status jenkins
