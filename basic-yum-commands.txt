@@ -1,0 +1,21 @@
+basic yum commands
+
+yum list available           # List all available packages
+yum list installed           # List all installed packages
+
+yum deplist nfs-utils        # List dependencies for nfs-utils
+yum search samba / keyword          # Find packages with samba in name or description
+
+yum repolist                     # Display enabled software repositories
+yum repoinfo rhel-7-server-rpms  # See info on specific repo
+yum repo-pkgs my-rpms list       # List packages from a specific repo
+
+yum install vsftpd           # Install the vsftpd package
+yum update                   # Update all packages
+yum downgrade abc            # Downgrade the abc package to an earlier version
+yum autoremove httpd         # Remove httpd and unneeded packages
+
+yum history list             # List all yum transactions
+yum clean packages           # Delete packages saved in cache  
+
+yum remove <package>: Removes a package and its dependencies. 
