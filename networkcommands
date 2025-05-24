@@ -1,5 +1,8 @@
 network and process related commands
 
-netstat -tuln |  Displays a list of open TCP and UDP ports, along with their associated services. 
-netstat -tulpn | grep LISTEN: Filters for only listening TCP ports. 
-netstat -lntu | grep <port_number>: Checks if a specific port is open. 
+netstat -tuln                          -   Displays a list of open TCP and UDP ports, along with their associated services. 
+netstat -tulpn                         -    grep LISTEN: Filters for only listening TCP ports. 
+netstat -lntu | grep <port_number>     -   Checks if a specific port is open. 
+
+lsof -i -P -n | grep LISTEN   -  Displays open files (including sockets) and their associated processes, specifically filtering for listening ports. 
+lsof -i:22                   -  Displays information about processes using port 22 (SSH). 
