@@ -24,6 +24,8 @@ jobs:
 
     - name: Set up Google Cloud SDK
       run: |
+        sudo apt-get update
+        sleep 5
         sudo apt-get install google-cloud-cli-gke-gcloud-auth-plugin
 #      uses: google-github-actions/setup-gcloud@v1
 #      with:
