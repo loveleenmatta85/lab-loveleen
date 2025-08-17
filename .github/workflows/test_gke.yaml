@@ -3,11 +3,6 @@ name: Connect to GKE
 on:
   workflow_dispatch:
 
-env:
-  GCP_PROJECT_ID: fabled-era-467617-p0
-  GKE_CLUSTER_NAME: lm-cluster
-  GKE_ZONE: us-central1-a
-  
 jobs:
   connect-to-gke:
     runs-on: ubuntu-latest
