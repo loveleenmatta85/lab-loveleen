@@ -26,7 +26,7 @@ jobs:
     - name: Get GKE credentials
       run: |
         gcloud container clusters get-credentials ${{ secrets.GKE_CLUSTER_NAME }} \
-          --region ${{ secrets.GKE_ZONE }} \
+          --zone ${{ secrets.GKE_ZONE }} \
           --project ${{ secrets.GCP_PROJECT_ID }}
 
     - name: Verify kubectl connection
